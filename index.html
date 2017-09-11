@@ -10,6 +10,54 @@
     <title>Tamagotchi</title>
   </head>
   <body>
-    <div id="time"></div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Tamagotchi</h1>
+      </div>
+
+      <form id="tamagotchi-form">
+        <label for="name">Tamagotchi name: </label>
+        <input type="text" id="name">
+        <button class="btn btn-default">Start playing</button>
+      </form>
+
+      <div id="ded"></div>
+
+      <p class="image-live"><img src="img/Mametchi.png"></p>
+      <p class="image-dead"><img src="img/obake.png"></p>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">
+            <div class="food">Food Level: <span id="food"></span>
+              <br>
+              <button class="btn btn-default" id="feed">Feed</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="well">
+            <div class="attention">Attention Level: <span id="attention"></span>
+              <br>
+              <button class="btn btn-default" id="play">Play</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="well">
+            <div class="rest">Rest Level: <span id="rest"></span>
+              <br>
+              <button class="btn btn-default" id="sleep">Sleep</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <span id="ded-message"></span>
+    </div>
+
   </body>
 </html>

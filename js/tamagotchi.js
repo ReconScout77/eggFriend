@@ -1,3 +1,4 @@
+
 export class Tamagotchi {
 
   constructor(name){
@@ -10,14 +11,18 @@ export class Tamagotchi {
 
   setHunger(){
     setInterval(() => {
-      this.foodLevel-=3;
-    }, 1000);
+      this.foodLevel-=1;
+    }, 333);
+    // if(this.foodLevel <=0){
+    //   clearInterval();
+    //   return(`${this.name} has died.`);
+    // }
   }
 
   setLonely(){
     setInterval(() => {
-      this.attentionLevel-=5;
-    }, 1000);
+      this.attentionLevel-=1;
+    }, 200);
   }
 
   setTired(){
@@ -52,6 +57,5 @@ export class Tamagotchi {
     this.restLevel = 100;
     }
   }
-
 
 }
