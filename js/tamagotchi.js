@@ -28,7 +28,8 @@ export class Tamagotchi {
 
   isDead(){
     if ((this.foodLevel <= 0) || (this.attentionLevel <= 0) || (this.restLevel <= 0)) {
-      return this.death = true;
+      this.death = true;
+      return this.death;
     } else {
       return false;
     }
@@ -51,4 +52,6 @@ export class Tamagotchi {
     this.restLevel = 100;
     }
   }
+
+
 }
